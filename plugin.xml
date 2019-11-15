@@ -8,6 +8,11 @@
         <clobbers target="yandexads" />
     </js-module>
     <platform name="android">
-        
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="YandexAds">
+                <param name="android-package" value="org.apache.cordova.yandexads.YandexAds" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/YandexAds.java" target-dir="src/org/apache/cordova/yandexads" />
     </platform>
 </plugin>
