@@ -15,4 +15,12 @@
         </config-file>
         <source-file src="src/android/YandexAds.java" target-dir="src/org/apache/cordova/yandexads" />
     </platform>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="YandexAds">
+                <param name="ios-package" value="YandexAds" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/YandexAds.m" />
+    </platform>
 </plugin>
